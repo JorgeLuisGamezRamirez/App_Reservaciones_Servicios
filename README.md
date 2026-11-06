@@ -137,13 +137,6 @@ pendiente → confirmada → finalizada
 | GET | /users/:id/notifications | Notificaciones |
 | GET | /admin/overview | Vista global (super admin) |
 
-## Limitaciones conocidas
-
-- Las contraseñas se guardan en texto plano y no hay tokens de sesión. En producción se usaría hash (bcrypt) y JWT.
-- Los negocios usan íconos y colores en lugar de fotos.
-- Las notificaciones se consultan periódicamente, no llegan por push en tiempo real.
-- No hay pruebas automatizadas.
-
 ## Autor
 
 Jorge Luis Gámez Ramírez · Universidad Autónoma de Tamaulipas, Facultad de Ingeniería Tampico
