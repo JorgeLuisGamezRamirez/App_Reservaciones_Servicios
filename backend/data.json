@@ -1,0 +1,250 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Cliente Demo",
+      "email": "cliente@demo.com",
+      "password": "123456",
+      "role": "cliente"
+    },
+    {
+      "id": "u2",
+      "name": "Admin Demo",
+      "email": "admin@demo.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "u3",
+      "name": "Dueño Spa Luna",
+      "email": "spa@demo.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "u4",
+      "name": "Dueña Clínica Sonrisa",
+      "email": "dental@demo.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "u5",
+      "name": "Dueño Gimnasio Fuerza",
+      "email": "gym@demo.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "u6",
+      "name": "Super Administrador",
+      "email": "superadmin@demo.com",
+      "password": "123456",
+      "role": "superadmin"
+    }
+  ],
+  "establishments": [
+    {
+      "id": "e1",
+      "ownerId": "u2",
+      "name": "Barbería El Corte",
+      "category": "Barbería",
+      "rating": 4.8,
+      "address": "Ciudad Madero",
+      "icon": "💈",
+      "color": "#1e3a8a",
+      "open": 540,
+      "close": 1080,
+      "services": [
+        {
+          "id": "s1",
+          "name": "Corte clásico",
+          "description": "Corte con tijera o máquina y acabado.",
+          "price": 120,
+          "duration": 45
+        },
+        {
+          "id": "s2",
+          "name": "Barba",
+          "description": "Perfilado y arreglo de barba.",
+          "price": 80,
+          "duration": 30
+        },
+        {
+          "id": "s3",
+          "name": "Corte + barba",
+          "description": "Paquete completo.",
+          "price": 180,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "ownerId": "u3",
+      "name": "Spa Luna",
+      "category": "Spa",
+      "rating": 4.6,
+      "address": "Tampico",
+      "icon": "🧖",
+      "color": "#0f766e",
+      "open": 600,
+      "close": 1140,
+      "services": [
+        {
+          "id": "s4",
+          "name": "Masaje relajante",
+          "description": "Masaje de cuerpo completo con aceites.",
+          "price": 450,
+          "duration": 60
+        },
+        {
+          "id": "s5",
+          "name": "Facial hidratante",
+          "description": "Limpieza profunda e hidratación.",
+          "price": 300,
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "ownerId": "u4",
+      "name": "Clínica Dental Sonrisa",
+      "category": "Dentista",
+      "rating": 4.9,
+      "address": "Altamira",
+      "icon": "🦷",
+      "color": "#0e7490",
+      "open": 540,
+      "close": 1020,
+      "services": [
+        {
+          "id": "s6",
+          "name": "Limpieza dental",
+          "description": "Limpieza y revisión general.",
+          "price": 350,
+          "duration": 45
+        },
+        {
+          "id": "s7",
+          "name": "Consulta",
+          "description": "Valoración con el dentista.",
+          "price": 250,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "ownerId": "u5",
+      "name": "Gimnasio Fuerza",
+      "category": "Gimnasio",
+      "rating": 4.5,
+      "address": "Madero",
+      "icon": "🏋️",
+      "color": "#9a3412",
+      "open": 360,
+      "close": 1320,
+      "services": [
+        {
+          "id": "s8",
+          "name": "Entrenamiento personal",
+          "description": "Sesión 1 a 1 con entrenador certificado.",
+          "price": 350,
+          "duration": 60
+        },
+        {
+          "id": "s9",
+          "name": "Clase grupal",
+          "description": "Clase de acondicionamiento físico.",
+          "price": 120,
+          "duration": 45
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1793930090498-cgy9a",
+      "userId": "u1",
+      "establishmentId": "e3",
+      "serviceId": "s7",
+      "date": "2026-11-19",
+      "start": 540,
+      "duration": 30,
+      "status": "pendiente"
+    },
+    {
+      "id": "1793930791514-ob8xp",
+      "userId": "u1",
+      "establishmentId": "e1",
+      "serviceId": "s1",
+      "date": "2026-11-06",
+      "start": 570,
+      "duration": 45,
+      "status": "cancelada"
+    },
+    {
+      "id": "1793930849022-hvgqz",
+      "userId": "u1",
+      "establishmentId": "e1",
+      "serviceId": "s1",
+      "date": "2026-11-06",
+      "start": 540,
+      "duration": 45,
+      "status": "cancelada"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1793930090498-8im35",
+      "userId": "u1",
+      "message": "Recibimos tu reservación en Clínica Dental Sonrisa para el jue 19 nov a las 09:00. Está pendiente de confirmación.",
+      "read": true,
+      "createdAt": "2026-11-06T01:54:50.498Z"
+    },
+    {
+      "id": "1793930791514-4pll8",
+      "userId": "u1",
+      "message": "Recibimos tu reservación en Barbería El Corte para el vie 6 nov a las 09:30. Está pendiente de confirmación.",
+      "read": true,
+      "createdAt": "2026-11-06T02:06:31.514Z"
+    },
+    {
+      "id": "1793930803206-cfu6s",
+      "userId": "u1",
+      "message": "Tu cita en Barbería El Corte del vie 6 nov a las 09:30 fue confirmada.",
+      "read": true,
+      "createdAt": "2026-11-06T02:06:43.206Z"
+    },
+    {
+      "id": "1793930825923-6wbqn",
+      "userId": "u1",
+      "message": "Tu cita en Barbería El Corte del vie 6 nov a las 09:30 fue cancelada por el establecimiento.",
+      "read": true,
+      "createdAt": "2026-11-06T02:07:05.923Z"
+    },
+    {
+      "id": "1793930849022-4h7di",
+      "userId": "u1",
+      "message": "Recibimos tu reservación en Barbería El Corte para el vie 6 nov a las 09:00. Está pendiente de confirmación.",
+      "read": true,
+      "createdAt": "2026-11-06T02:07:29.022Z"
+    },
+    {
+      "id": "1793930861785-5utxu",
+      "userId": "u1",
+      "message": "Tu cita en Barbería El Corte del vie 6 nov a las 09:00 fue confirmada.",
+      "read": true,
+      "createdAt": "2026-11-06T02:07:41.785Z"
+    },
+    {
+      "id": "1793930884523-agyb3",
+      "userId": "u1",
+      "message": "Tu cita en Barbería El Corte del vie 6 nov a las 09:00 fue cancelada por el establecimiento.",
+      "read": true,
+      "createdAt": "2026-11-06T02:08:04.523Z"
+    }
+  ]
+}
